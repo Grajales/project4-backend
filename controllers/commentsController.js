@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
 
-const UserModel = require("../models").User;
+// const UserModel = require("../models").User;
 const ArtistModel = require("../models").Artist;
-const SongModel = require("../models").Song;
+// const SongModel = require("../models").Song;
 
 // GET users who favorited an artist
 router.get("/profile/:id", async (req, res) => {
