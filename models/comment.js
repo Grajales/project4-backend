@@ -13,7 +13,10 @@ module.exports = (sequelize, DataTypes) => {
   }
   Comment.init(
     {
+      feedback: DataTypes.STRING,
       name: DataTypes.STRING,
+      email: DataTypes.STRING,
+      themeId: DataTypes.INTEGER
     },
     {
       sequelize,
