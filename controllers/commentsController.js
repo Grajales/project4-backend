@@ -9,7 +9,11 @@ const CommentModel = require("../models").Comment;
 
 // GET ALL comments
 router.get("/", async (req, res) => {
-    let comments = await CommentModel.findAll();
+    let comments = await CommentModel.findAll({
+      order: [
+        ['updatedAt', 'DESC'],
+      ]
+    });
     res.json({ comments });
   });
 
