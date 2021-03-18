@@ -1,10 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-// const UserModel = require("../models").User;
 const CommentModel = require("../models").Comment;
-// const SongModel = require("../models").Song;
-
 
 
 // GET ALL comments
